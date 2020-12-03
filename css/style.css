@@ -70,6 +70,17 @@ width: 75%;
     margin: 5px;
   }
 
+  .ex8 .parent {
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ex8 .visual {
+    height: 100px;
+    width: 100%;
+  }
 footer{
 	background-color: #dddddd;
 	padding: 20px;
