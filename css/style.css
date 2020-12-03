@@ -53,6 +53,18 @@ width: 75%;
 }
 
 
+  .ex2 .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ex2 .box {
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+  }
+
 footer{
 	background-color: #dddddd;
 	padding: 20px;
