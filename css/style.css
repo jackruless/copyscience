@@ -4,11 +4,6 @@ body{
 	padding:20px;
 	background-color: #f1f1f1;
 }
-
- .ex4 .parent {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
 *{
 	box-sizing: border-box;
 }
@@ -58,29 +53,6 @@ width: 75%;
 }
 
 
-  .ex2 .parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .ex2 .box {
-    flex: 1 1 150px; /*  Stretching: */
-    flex: 0 1 150px; /*  No stretching: */
-    margin: 5px;
-  }
-
-  .ex8 .parent {
-    height: auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .ex8 .visual {
-    height: 100px;
-    width: 100%;
-  }
 footer{
 	background-color: #dddddd;
 	padding: 20px;
@@ -96,4 +68,31 @@ footer{
     padding: 0px;
 	}
 }
+
+
+  .ex5 .parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+  }
+  
+  .ex5 header {
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+
+  .ex5 .left-side {
+    grid-column: 1 / 2;
+  }
+
+  .ex5 main {
+    grid-column: 2 / 3;
+  }
+
+  .ex5 .right-side {
+    grid-column: 3 / 4;
+  }
+
+  .ex5 footer {
+    grid-column: 1 / 4;
+  }
 
